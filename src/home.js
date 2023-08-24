@@ -1,10 +1,9 @@
 
-import { createPage } from "./base";
 export {createHome};
 
 
 const createHome=()=>{
-    bodyContent = document.querySelector("#bodyContent");
+    const bodyContent = document.querySelector("#bodyContent");
 
     const homeTitle = document.createElement("div");
     homeTitle.classList.add("typeTitle");

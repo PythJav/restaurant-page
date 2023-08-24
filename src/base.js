@@ -2,7 +2,7 @@ const body = document.getElementsByTagName("BODY")[0];
 import Burger from './burger.png';
 
 
-export  {createPage,createContent,pageState};
+export  {createPage,createContent,pageState,clearContent};
 
 let pageState= "Home";
 
@@ -84,3 +84,7 @@ const createContent=()=>{
 
 
 }
+
+const clearContent =()=>
+document.querySelector("#bodyContent").replaceChildren();
+
