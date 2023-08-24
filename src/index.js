@@ -1,30 +1,36 @@
 import _ from 'lodash';
 import './style.css';
-import {createPage} from './base';'/base.js';
+import {createContent,createPage} from './base';'/base.js';
 
 
-const body = document.getElementsByTagName("BODY")[0];
-
-
-
-const createContent=()=>{
-    const contentDiv= document.createElement("div");
-    contentDiv.id="content";
-    body.appendChild(contentDiv);
-
-
-
-}
 createContent();
 
 createPage();
- function component() {
-   const element = document.createElement('div');
 
-  // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+// document.getElementById("headerHome").addEventListener("click",sayHi);
+// document.getElementById("headerAbout");
+// document.getElementById("headerContact");
+// let Homestate = "home";
 
-   return element;
- }
+// headerHome.addEventListener("click",sayHi);
 
- document.body.appendChild(component());
+// let sayHi=() =>{
+//   console.log("HomeButton");
+// }
+
+// const body = document.getElementsByTagName("BODY")[0];
+
+
+
+// const createContent=()=>{
+//     const contentDiv= document.createElement("div");
+//     contentDiv.id="content";
+//     body.appendChild(contentDiv);
+
+
+
+// }
+
+
+
+ 
