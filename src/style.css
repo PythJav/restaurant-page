@@ -1,10 +1,32 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 .hello {
     color: red;
   }
 
+#content{
+  display: grid;
+  justify-content: center;
+
+}
+
 header{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,100px);
     /* width: ; */
+}
+.headerChild{
+  border: 1px solid black;
+}
+
+#bodyContent{
+  border: 1px solid blue;
+  width: 500px;
+  height: 500px;
 }

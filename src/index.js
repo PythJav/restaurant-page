@@ -1,35 +1,33 @@
 import _ from 'lodash';
 import './style.css';
-import {createContent,createPage} from './base';'/base.js';
-
-
+import {createContent,createPage,pageState} from './base';'/base.js';
 createContent();
 
 createPage();
 
-// document.getElementById("headerHome").addEventListener("click",sayHi);
-// document.getElementById("headerAbout");
-// document.getElementById("headerContact");
-// let Homestate = "home";
-
-// headerHome.addEventListener("click",sayHi);
-
-// let sayHi=() =>{
-//   console.log("HomeButton");
-// }
-
-// const body = document.getElementsByTagName("BODY")[0];
+const header = document.getElementById("headerId").addEventListener('click',checkState);
 
 
 
-// const createContent=()=>{
-//     const contentDiv= document.createElement("div");
-//     contentDiv.id="content";
-//     body.appendChild(contentDiv);
+function checkState(){
+  if(pageState==="Home"){
+  console.log("Home Clicked in index");
+
+}
+
+else if (pageState==="About"){
+  console.log("About Clicked in index");
+
+}
+
+else if (pageState==="Contact"){
+  console.log("Contact Clicked in index");
+
+  
+}}
 
 
 
-// }
 
 
 
