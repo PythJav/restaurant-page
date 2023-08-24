@@ -1,5 +1,5 @@
 const body = document.getElementsByTagName("BODY")[0];
-
+import Burger from './burger.png';
 
 
 export  {createPage,createContent,pageState};
@@ -55,6 +55,9 @@ const createContent=()=>{
 
     const bodyContent= document.createElement('div');
     bodyContent.id="bodyContent";
+    // const burgerPic= new Image();
+    // burgerPic.src= Burger;
+    // bodyContent.appendChild(burgerPic);
     content.appendChild(bodyContent);
 
 

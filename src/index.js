@@ -1,9 +1,12 @@
 import _ from 'lodash';
 import './style.css';
+
 import {createContent,createPage,pageState} from './base';'/base.js';
+import { createHome } from './home';
 createContent();
 
 createPage();
+checkState();
 
 const header = document.getElementById("headerId").addEventListener('click',checkState);
 
@@ -11,6 +14,7 @@ const header = document.getElementById("headerId").addEventListener('click',chec
 
 function checkState(){
   if(pageState==="Home"){
+    createHome();
   console.log("Home Clicked in index");
 
 }
